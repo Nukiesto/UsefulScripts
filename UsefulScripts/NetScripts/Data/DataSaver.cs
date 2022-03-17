@@ -30,7 +30,7 @@ namespace UsefulScripts.NetScripts.Data
             }
         }
         
-        public static void Save(string fname, object data, bool brettyPrint = true)
+        public static void Save(string fname, object data, bool brettyPrint = false)
         {
             SaveF(Path.Combine(Application.persistentDataPath, fname), data, brettyPrint);
         }
@@ -44,7 +44,7 @@ namespace UsefulScripts.NetScripts.Data
             return LoadF(Path.Combine(Application.persistentDataPath, fname), type);
         }
         
-        public static void SaveF(string fname, object data, bool brettyPrint = true)
+        public static void SaveF(string fname, object data, bool brettyPrint = false)
         {
             SaveData(fname, Serialize(data, brettyPrint));
         }
@@ -60,7 +60,7 @@ namespace UsefulScripts.NetScripts.Data
             return text != "" ? Deserialize(text, type) : default;
         }
 
-        public static string Serialize(object data, bool brettyPrint = true)
+        public static string Serialize(object data, bool brettyPrint = false)
         {
             return JsonConvert.SerializeObject(data, brettyPrint ? Formatting.Indented : Formatting.None, Settings);
         }
