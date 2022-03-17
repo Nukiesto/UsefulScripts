@@ -4,7 +4,7 @@
   "displayName": "UsefulScripts",
   "description": "It`s usefuls scripts for coding",
   "dependencies": {
-    "com.leopotam.ecs"
+    "com.leopotam.ecs" : "1.0.0"
   },
   "author": {
     "name": "Nukiesto",
