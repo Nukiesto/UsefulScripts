@@ -4,7 +4,13 @@
   "displayName": "UsefulScripts",
   "description": "It`s usefuls scripts for coding",
   "dependencies": {
-    "com.leopotam.ecs" : "1.0.0"
+    "com.leopotam.ecs" : "1.0.0",
+    "jillejr.newtonsoft.json-for-unity" : "10.0.302"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nukiesto/UsefulScripts.git",
+    "directory": "UsefulScripts"
   },
   "author": {
     "name": "Nukiesto",
