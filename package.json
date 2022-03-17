@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "displayName": "UsefulScripts",
   "description": "It`s usefuls scripts for coding",
+  "dependencies": {
+    "com.leopotam.ecs"
+  },
   "author": {
     "name": "Nukiesto",
     "email": "nukiesto@gmail.com",
