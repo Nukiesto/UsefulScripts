@@ -5,10 +5,10 @@
 // ----------------------------------------------------------------------------
 
 using System;
-using LeopotamGroup.Collections;
+using Leopotam.Group.Collections;
 using UnityEngine;
 
-namespace LeopotamGroup.Pooling {
+namespace Leopotam.Group.Pooling {
     /// <summary>
     /// Pool container. Supports spawning of named prefab from Resources folder.
     /// </summary>

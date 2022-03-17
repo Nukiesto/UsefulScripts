@@ -10,11 +10,11 @@ using System.IO;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
-using LeopotamGroup.Serialization;
+using Leopotam.Group.Serialization;
 using UnityEditor;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.UnityEditors {
+namespace EditorHelpers.Editor {
     /// <summary>
     /// Downloader from google docs sheets.
     /// </summary>

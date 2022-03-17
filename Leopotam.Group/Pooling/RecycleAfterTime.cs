@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace LeopotamGroup.Pooling {
+namespace Leopotam.Group.Pooling {
     /// <summary>
     /// Recycle instance after time (if it was spawned from pool).
     /// Dont use it on swarm spawns of prefab (use custom recycling instead).

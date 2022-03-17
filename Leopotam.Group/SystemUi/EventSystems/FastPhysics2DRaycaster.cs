@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace LeopotamGroup.SystemUi.EventSystems {
+namespace Leopotam.Group.SystemUi.EventSystems {
 #if UNITY_EDITOR
     [AddComponentMenu ("Event/LeopotamGroup/Fast Physics 2D Raycaster")]
 #endif

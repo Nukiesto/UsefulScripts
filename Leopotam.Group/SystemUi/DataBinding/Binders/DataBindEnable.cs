@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace LeopotamGroup.SystemUi.DataBinding.Binders {
+namespace Leopotam.Group.SystemUi.DataBinding.Binders {
     /// <summary>
     /// Data binding of enable / disable state for any Component or GameObject.
     /// </summary>

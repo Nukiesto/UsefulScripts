@@ -1,9 +1,9 @@
 using System.Collections;
-using LeopotamGroup.Common;
-using LeopotamGroup.SystemUi.DataBinding;
+using Leopotam.Group.Common;
+using Leopotam.Group.SystemUi.DataBinding;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.SystemUi.DataBindingTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.SystemUi.DataBinding {
     /// <summary>
     /// Test user data.
     /// </summary>

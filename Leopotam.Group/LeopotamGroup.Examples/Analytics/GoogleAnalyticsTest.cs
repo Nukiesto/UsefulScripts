@@ -1,8 +1,8 @@
-using LeopotamGroup.Analytics;
-using LeopotamGroup.Common;
+using Leopotam.Group.Analytics;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.Analytics.GoogleAnalyticsTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Analytics {
     public class GoogleAnalyticsTest : MonoBehaviour {
         void OnGUI () {
             var ga = Service<GoogleAnalyticsManager>.Get ();

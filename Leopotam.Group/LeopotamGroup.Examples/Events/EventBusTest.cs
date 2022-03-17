@@ -1,7 +1,7 @@
-using LeopotamGroup.Events;
+using Leopotam.Group.Events;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.EventsTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Events {
     class TestEvent1 {
         public int IntValue;
 

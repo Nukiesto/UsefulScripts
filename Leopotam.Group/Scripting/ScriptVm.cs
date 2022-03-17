@@ -4,9 +4,9 @@
 // Copyright (c) 2012-2019 Leopotam <leopotam@gmail.com>
 // ----------------------------------------------------------------------------
 
-using LeopotamGroup.Scripting.Internal;
+using Leopotam.Group.Scripting.Internal;
 
-namespace LeopotamGroup.Scripting {
+namespace Leopotam.Group.Scripting {
     /// <summary>
     /// Script engine VM. Internal class.
     /// </summary>

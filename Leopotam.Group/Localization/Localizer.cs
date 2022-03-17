@@ -6,11 +6,11 @@
 
 using System;
 using System.Collections.Generic;
-using LeopotamGroup.Common;
-using LeopotamGroup.Serialization;
+using Leopotam.Group.Common;
+using Leopotam.Group.Serialization;
 using UnityEngine;
 
-namespace LeopotamGroup.Localization {
+namespace Leopotam.Group.Localization {
     /// <summary>
     /// Localizer - helper for localization. Supports dynamic overriding of localization tokens with rollback.
     /// </summary>

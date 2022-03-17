@@ -7,7 +7,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace LeopotamGroup.SystemUi.DataBinding.Binders {
+namespace Leopotam.Group.SystemUi.DataBinding.Binders {
     /// <summary>
     /// Data binding of sprite for any Image component.
     /// </summary>

@@ -9,7 +9,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.UnityEditors {
+namespace EditorHelpers.Editor {
     sealed class ShaderTemplateGenerator : EditorWindow {
         const string ShaderTemplate =
             "Shader \"Custom/<<NAME>>\"{\tProperties{\t\t_MainTex(\"Texture\",2D)=\"white\" <<>>\n\t}\n\n\tSubShader{" +

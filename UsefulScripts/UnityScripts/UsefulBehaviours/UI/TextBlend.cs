@@ -1,5 +1,5 @@
 ﻿using System.Collections;
-using Plugins.CoroutinesWithoutMb.SimpleAsync;
+using SimpleAsync.CoroutinesWithoutMb.SimpleAsync;
 using UnityEngine;
 using UnityEngine.UI;
 

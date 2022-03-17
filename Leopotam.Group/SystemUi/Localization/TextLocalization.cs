@@ -4,12 +4,12 @@
 // Copyright (c) 2012-2019 Leopotam <leopotam@gmail.com>
 // ----------------------------------------------------------------------------
 
-using LeopotamGroup.Localization;
+using Leopotam.Group.Localization;
 using UnityEngine;
 using UnityEngine.Scripting;
 using UnityEngine.UI;
 
-namespace LeopotamGroup.SystemUi.Localization {
+namespace Leopotam.Group.SystemUi.Localization {
     /// <summary>
     /// Localization helper for System UI Text.
     /// </summary>

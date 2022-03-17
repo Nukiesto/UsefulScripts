@@ -1,7 +1,7 @@
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.Common.ScreenManagerTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Common.ScreenManager {
     public class ScreenManagerTestScene1 : MonoBehaviour {
         const string Scene1Name = "ScreenManager - 1";
 
@@ -11,7 +11,7 @@ namespace LeopotamGroup.Examples.Common.ScreenManagerTest {
             GUILayout.Label (
                 string.Format ("Add both scenes '{0}', '{1}' to BuildSettings and press button", Scene1Name, Scene2Name));
             if (GUILayout.Button ("Go to second scene")) {
-                Service<ScreenManager>.Get ().NavigateTo (Scene2Name, true);
+                Service<Group.Common.ScreenManager>.Get ().NavigateTo (Scene2Name, true);
             }
         }
     }

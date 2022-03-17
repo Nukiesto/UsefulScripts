@@ -5,9 +5,9 @@
 // ----------------------------------------------------------------------------
 
 using System.Collections.Generic;
-using LeopotamGroup.Math;
+using Leopotam.Group.Math;
 
-namespace LeopotamGroup.Scripting {
+namespace Leopotam.Group.Scripting {
     /// <summary>
     /// Type of ScriptVm variable.
     /// </summary>

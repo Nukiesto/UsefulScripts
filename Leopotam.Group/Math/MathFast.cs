@@ -8,7 +8,7 @@ using System;
 using System.Runtime.InteropServices;
 using UnityEngine;
 
-namespace LeopotamGroup.Math {
+namespace Leopotam.Group.Math {
     /// <summary>
     /// Holder of extensions / helpers.
     /// </summary>

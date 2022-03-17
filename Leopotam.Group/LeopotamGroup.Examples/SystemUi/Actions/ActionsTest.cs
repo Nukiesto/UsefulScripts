@@ -1,9 +1,9 @@
-using LeopotamGroup.Common;
-using LeopotamGroup.Events;
-using LeopotamGroup.SystemUi.Actions;
+using Leopotam.Group.Common;
+using Leopotam.Group.Events;
+using Leopotam.Group.SystemUi.Actions;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.SystemUi.ActionsTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.SystemUi.Actions {
     public class ActionsTest : MonoBehaviour {
         [SerializeField]
         string _onClickFilteredGroup;

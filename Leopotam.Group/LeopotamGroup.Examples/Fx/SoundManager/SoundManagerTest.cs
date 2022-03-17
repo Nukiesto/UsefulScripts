@@ -1,8 +1,8 @@
-using LeopotamGroup.Common;
-using LeopotamGroup.Fx;
+using Leopotam.Group.Common;
+using Leopotam.Group.Fx;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.FX.SoundManagerTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Fx.SoundManager {
     public class SoundManagerTest : MonoBehaviour {
         [SerializeField]
         AudioClip _fxClip = null;
@@ -10,7 +10,7 @@ namespace LeopotamGroup.Examples.FX.SoundManagerTest {
         const string MusicName = "Music/Forest";
 
         void OnGUI () {
-            var sm = Service<SoundManager>.Get ();
+            var sm = Service<Group.Fx.SoundManager>.Get ();
             if (GUILayout.Button ("Turn on music")) {
                 sm.PlayMusic (MusicName, true);
             }

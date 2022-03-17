@@ -1,4 +1,4 @@
-﻿using LeopotamGroup.Math;
+﻿using Leopotam.Group.Math;
 using UnityEngine;
 
 namespace UsefulScripts.Math

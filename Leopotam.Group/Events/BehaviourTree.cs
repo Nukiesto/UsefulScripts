@@ -4,7 +4,7 @@
 // Copyright (c) 2012-2019 Leopotam <leopotam@gmail.com>
 // ----------------------------------------------------------------------------
 
-namespace LeopotamGroup.Events {
+namespace Leopotam.Group.Events {
     /// <summary>
     /// Behaviour tree.
     /// </summary>

@@ -6,11 +6,11 @@
 
 using System;
 using System.Collections.Generic;
-using LeopotamGroup.Collections;
-using LeopotamGroup.Math;
-using LeopotamGroup.Serialization.XmlInternal;
+using Leopotam.Group.Collections;
+using Leopotam.Group.Math;
+using Leopotam.Group.Serialization.XmlInternal;
 
-namespace LeopotamGroup.Serialization {
+namespace Leopotam.Group.Serialization {
     /// <summary>
     /// Xml serialization. Supports deserialization only. Declaration / doctype will be ignored.
     /// </summary>

@@ -7,7 +7,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace LeopotamGroup.SystemUi.Atlases {
+namespace Leopotam.Group.SystemUi.Atlases {
     public sealed class SpriteAtlas : MonoBehaviour {
         [SerializeField]
         string _name = null;

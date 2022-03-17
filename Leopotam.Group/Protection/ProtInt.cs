@@ -6,7 +6,7 @@
 
 using System.Runtime.InteropServices;
 
-namespace LeopotamGroup.Protection {
+namespace Leopotam.Group.Protection {
     /// <summary>
     /// Wrapper for int32 value protection.
     /// </summary>

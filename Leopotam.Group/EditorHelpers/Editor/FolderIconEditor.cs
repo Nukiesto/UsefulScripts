@@ -6,12 +6,12 @@
 
 using System;
 using System.Collections.Generic;
-using LeopotamGroup.Common;
-using LeopotamGroup.Serialization;
+using Leopotam.Group.Common;
+using Leopotam.Group.Serialization;
 using UnityEditor;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.UnityEditors {
+namespace EditorHelpers.Editor {
     sealed class FolderIconEditor : EditorWindow {
         class FolderIconDesc {
             Color32? _validColor;

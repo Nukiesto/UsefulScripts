@@ -9,7 +9,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-namespace LeopotamGroup.SystemUi.Layouts {
+namespace Leopotam.Group.SystemUi.Layouts {
     /// <summary>
     /// One axis alignment.
     /// </summary>

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Plugins.CoroutinesWithoutMb.SimpleAsync
+namespace SimpleAsync.CoroutinesWithoutMb.SimpleAsync
 {
     public class AsyncProcessor
     {

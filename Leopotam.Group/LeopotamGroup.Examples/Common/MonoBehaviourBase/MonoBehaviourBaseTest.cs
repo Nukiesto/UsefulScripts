@@ -1,9 +1,8 @@
 using System.Collections;
-using LeopotamGroup.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.Common.MonoBehaviourTest {
-    public class MonoBehaviourBaseTest : MonoBehaviourBase {
+namespace Leopotam.Group.LeopotamGroup.Examples.Common.MonoBehaviourBase {
+    public class MonoBehaviourBaseTest : Group.Common.MonoBehaviourBase {
         IEnumerator Start () {
             yield return new WaitForSeconds (1f);
 

@@ -7,7 +7,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace LeopotamGroup.SystemUi.Widgets {
+namespace Leopotam.Group.SystemUi.Widgets {
     /// <summary>
     /// Non visual interactive UI widget, keep fillrate / no rendering / alpha-blending.
     /// </summary>

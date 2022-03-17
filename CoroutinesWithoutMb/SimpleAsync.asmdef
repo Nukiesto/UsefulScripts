@@ -1,6 +1,6 @@
 {
     "name": "SimpleAsync",
-    "rootNamespace": "",
+    "rootNamespace": "SimpleAsync",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

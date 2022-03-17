@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace LeopotamGroup.Common {
+namespace Leopotam.Group.Common {
     /// <summary>
     /// Replacement for MonoBehaviour class with transform caching.
     /// </summary>

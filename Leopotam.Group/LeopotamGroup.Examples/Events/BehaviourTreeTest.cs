@@ -1,7 +1,7 @@
-using LeopotamGroup.Events;
+using Leopotam.Group.Events;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.EventsTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Events {
     public class BehaviourTreeTest : MonoBehaviour {
         /// <summary>
         /// Test data store for pull / push states / sharing data.

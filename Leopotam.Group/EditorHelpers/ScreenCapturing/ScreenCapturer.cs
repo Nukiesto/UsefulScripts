@@ -14,7 +14,7 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.ScreenCapturing {
+namespace EditorHelpers.ScreenCapturing {
     /// <summary>
     /// Screen capturer, can be started in play mode from "Window / LeopotamGroupLibrary / Capture screenshots..." menu.
     /// </summary>
@@ -113,23 +113,23 @@ namespace LeopotamGroup.EditorHelpers.ScreenCapturing {
             static ConstructorInfo _gvsCtor;
 
             static GameViewResolution () {
-                var gvType = typeof (Editor).Assembly.GetType ("UnityEditor.GameView");
+                var gvType = typeof (UnityEditor.Editor).Assembly.GetType ("UnityEditor.GameView");
                 _gvSelectedPreset = gvType.GetProperty ("selectedSizeIndex", BindingFlags.Instance | BindingFlags.NonPublic);
                 _gvRepaintAll = gvType.GetMethod ("RepaintAll", BindingFlags.Static | BindingFlags.Public);
                 _gvWindow = EditorWindow.GetWindow (gvType);
 
-                var gvgType = typeof (Editor).Assembly.GetType ("UnityEditor.GameViewSizeGroup");
+                var gvgType = typeof (UnityEditor.Editor).Assembly.GetType ("UnityEditor.GameViewSizeGroup");
                 _gvgGetTotalCount = gvgType.GetMethod ("GetTotalCount", BindingFlags.Instance | BindingFlags.Public);
                 _gvgAddCustomSize = gvgType.GetMethod ("AddCustomSize", BindingFlags.Instance | BindingFlags.Public);
                 _gvgRemoveCustomSize = gvgType.GetMethod ("RemoveCustomSize", BindingFlags.Instance | BindingFlags.Public);
 
-                var sizesType = typeof (Editor).Assembly.GetType ("UnityEditor.GameViewSizes");
+                var sizesType = typeof (UnityEditor.Editor).Assembly.GetType ("UnityEditor.GameViewSizes");
                 _gvsCurrentGroup = sizesType.GetProperty ("currentGroup", BindingFlags.Instance | BindingFlags.Public);
                 var singleType = typeof (ScriptableSingleton<>).MakeGenericType (sizesType);
                 var instanceProp = singleType.GetProperty ("instance");
                 _gvsInstance = instanceProp.GetValue (null, null);
 
-                var gvsType = typeof (Editor).Assembly.GetType ("UnityEditor.GameViewSize");
+                var gvsType = typeof (UnityEditor.Editor).Assembly.GetType ("UnityEditor.GameViewSize");
                 _gvsCtor = gvsType.GetConstructor (new [] { typeof (int), typeof (int), typeof (int), typeof (string) });
             }
 

@@ -7,7 +7,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.UnityEditors {
+namespace EditorHelpers.Editor {
     /// <summary>
     /// Helper for custom flags selector.
     /// </summary>

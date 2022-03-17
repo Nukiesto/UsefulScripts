@@ -7,7 +7,7 @@
 using System;
 using UnityEngine;
 
-namespace LeopotamGroup.Common {
+namespace Leopotam.Group.Common {
     /// <summary>
     /// Attribute for limit usage of MonoBehaviourService-classes at specified scenes only.
     /// </summary>

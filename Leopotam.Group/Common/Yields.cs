@@ -6,10 +6,10 @@
 
 using System.Collections;
 using System.Collections.Generic;
-using LeopotamGroup.Collections;
+using Leopotam.Group.Collections;
 using UnityEngine;
 
-namespace LeopotamGroup.Common {
+namespace Leopotam.Group.Common {
     /// <summary>
     /// Helper for use yield waiters without GC.
     /// </summary>

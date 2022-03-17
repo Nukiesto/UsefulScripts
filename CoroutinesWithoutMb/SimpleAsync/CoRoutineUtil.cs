@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Plugins.CoroutinesWithoutMb.SimpleAsync
+namespace SimpleAsync.CoroutinesWithoutMb.SimpleAsync
 {
     public static class CoRoutineUtil
     {

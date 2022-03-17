@@ -7,7 +7,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace LeopotamGroup.Collections {
+namespace Leopotam.Group.Collections {
     /// <summary>
     /// Stack class replacement with custom EqualityComparer and fastest comparation with direct cast to "System.Object"
     /// (useful for MonoBehaviour-inherited classes).

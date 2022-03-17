@@ -9,7 +9,7 @@ using UnityEditor;
 using UnityEditor.ProjectWindowCallback;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.UnityEditors {
+namespace EditorHelpers.Editor {
     /// <summary>
     /// For internal use.
     /// </summary>

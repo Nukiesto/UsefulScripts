@@ -4,11 +4,11 @@
 // Copyright (c) 2012-2019 Leopotam <leopotam@gmail.com>
 // ----------------------------------------------------------------------------
 
-using LeopotamGroup.Common;
-using LeopotamGroup.Events;
+using Leopotam.Group.Common;
+using Leopotam.Group.Events;
 using UnityEngine;
 
-namespace LeopotamGroup.SystemUi.Actions {
+namespace Leopotam.Group.SystemUi.Actions {
     /// <summary>
     /// Base class for ui action.
     /// </summary>

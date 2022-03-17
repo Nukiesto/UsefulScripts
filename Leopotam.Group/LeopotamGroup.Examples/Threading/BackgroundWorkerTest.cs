@@ -1,8 +1,8 @@
 using System;
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.ThreadingTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Threading {
     public class BackgroundWorkerTest : MonoBehaviour {
         [NonSerialized]
         int _iterator;

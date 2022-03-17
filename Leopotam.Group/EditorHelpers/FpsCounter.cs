@@ -4,10 +4,10 @@
 // Copyright (c) 2012-2019 Leopotam <leopotam@gmail.com>
 // ----------------------------------------------------------------------------
 
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers {
+namespace EditorHelpers {
     /// <summary>
     /// Fps counter service.
     /// </summary>

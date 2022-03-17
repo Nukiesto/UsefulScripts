@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace LeopotamGroup.SystemUi.Layouts {
+namespace Leopotam.Group.SystemUi.Layouts {
     /// <summary>
     /// Resizer of BoxCollider2D size for follow to RectTransform size.
     /// </summary>

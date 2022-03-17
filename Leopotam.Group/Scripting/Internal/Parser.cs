@@ -8,9 +8,9 @@
 
 using System;
 using System.Collections.Generic;
-using LeopotamGroup.Math;
+using Leopotam.Group.Math;
 
-namespace LeopotamGroup.Scripting.Internal {
+namespace Leopotam.Group.Scripting.Internal {
 
 
 class Parser {

@@ -8,7 +8,7 @@ using System;
 using System.Globalization;
 using System.Text;
 
-namespace LeopotamGroup.Math {
+namespace Leopotam.Group.Math {
     /// <summary>
     /// Math extensions.
     /// </summary>

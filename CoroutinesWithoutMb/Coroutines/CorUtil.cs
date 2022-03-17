@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace Plugins.CoroutinesWithoutMb.Coroutines
+namespace SimpleAsync.CoroutinesWithoutMb.Coroutines
 {
     public static class CorUtil
     {

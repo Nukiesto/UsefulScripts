@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace LeopotamGroup.SystemUi.Layouts {
+namespace Leopotam.Group.SystemUi.Layouts {
     /// <summary>
     /// Table layout without children resize.
     /// </summary>

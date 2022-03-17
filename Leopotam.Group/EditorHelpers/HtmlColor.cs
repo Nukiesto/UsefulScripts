@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers {
+namespace EditorHelpers {
     /// <summary>
     /// Inspector for select html color.
     /// </summary>

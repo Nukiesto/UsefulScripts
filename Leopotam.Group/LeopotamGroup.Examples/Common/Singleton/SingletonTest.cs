@@ -1,7 +1,7 @@
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.Common.SingletonTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Common.Singleton {
     public class SingletonTest : MonoBehaviour {
         void Start () {
             Service<MySingletonManager>.Get ().Test ();

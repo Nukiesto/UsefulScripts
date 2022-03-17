@@ -11,7 +11,7 @@ using System.Globalization;
 using System.Reflection;
 using System.Text;
 
-namespace LeopotamGroup.Serialization {
+namespace Leopotam.Group.Serialization {
     /// <summary>
     /// Helper for custom naming of fields on json serialization / deserialization.
     /// Useful for decreasing json-data length.

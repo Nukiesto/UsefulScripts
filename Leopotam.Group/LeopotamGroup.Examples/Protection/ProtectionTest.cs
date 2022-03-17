@@ -1,7 +1,7 @@
-using LeopotamGroup.Protection;
+using Leopotam.Group.Protection;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.ProtectionTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Protection {
     public class ProtectionTest : MonoBehaviour {
         void Start () {
             IntTest ();

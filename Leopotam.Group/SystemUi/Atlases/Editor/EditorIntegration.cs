@@ -9,7 +9,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace LeopotamGroup.SystemUi.Atlases.UnityEditors {
+namespace Leopotam.Group.SystemUi.Atlases.Editor {
     static class EditorIntegration {
         const string Title = "SpriteAtlas packer";
 

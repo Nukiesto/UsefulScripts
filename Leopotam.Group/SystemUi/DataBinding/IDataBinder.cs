@@ -4,7 +4,7 @@
 // Copyright (c) 2012-2019 Leopotam <leopotam@gmail.com>
 // ----------------------------------------------------------------------------
 
-namespace LeopotamGroup.SystemUi.DataBinding {
+namespace Leopotam.Group.SystemUi.DataBinding {
     /// <summary>
     /// Data binding events receiver.
     /// </summary>

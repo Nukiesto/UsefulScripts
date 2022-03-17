@@ -9,7 +9,7 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.UnityEditors {
+namespace EditorHelpers.Editor {
     /// <summary>
     /// Post solution generation attribute. Methods with PostSolutionGeneration attribute will be executed after C# project recompile.
     /// </summary>

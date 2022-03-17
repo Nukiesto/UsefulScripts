@@ -4,10 +4,10 @@
 // Copyright (c) 2012-2019 Leopotam <leopotam@gmail.com>
 // ----------------------------------------------------------------------------
 
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.Analytics {
+namespace Leopotam.Group.Analytics {
     /// <summary>
     /// Send analytic event on enable.
     /// </summary>

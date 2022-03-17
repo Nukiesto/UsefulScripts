@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace LeopotamGroup.Events {
+namespace Leopotam.Group.Events {
     /// <summary>
     /// EventBus implementation.
     /// </summary>

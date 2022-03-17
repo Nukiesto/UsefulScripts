@@ -1,12 +1,12 @@
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.Common.ScreenManagerTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Common.ScreenManager {
     public class ScreenManagerTestScene2 : MonoBehaviour {
         void OnGUI () {
             GUILayout.Label ("Second scene loaded!");
             if (GUILayout.Button ("Go back to first scene")) {
-                Service<ScreenManager>.Get ().NavigateBack ();
+                Service<Group.Common.ScreenManager>.Get ().NavigateBack ();
             }
         }
     }

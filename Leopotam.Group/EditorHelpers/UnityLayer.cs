@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers {
+namespace EditorHelpers {
     /// <summary>
     /// Helper for single layer selector.
     /// </summary>

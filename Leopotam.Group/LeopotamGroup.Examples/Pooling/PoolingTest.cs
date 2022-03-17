@@ -1,10 +1,10 @@
 using System.Collections;
-using LeopotamGroup.Common;
-using LeopotamGroup.Math;
-using LeopotamGroup.Pooling;
+using Leopotam.Group.Common;
+using Leopotam.Group.Math;
+using Leopotam.Group.Pooling;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.PoolingTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Pooling {
     public class PoolingTest : MonoBehaviour {
         [SerializeField]
         PoolContainer _pool;

@@ -6,10 +6,10 @@
 
 using System;
 using System.Globalization;
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.SystemUi.DataBinding.Binders {
+namespace Leopotam.Group.SystemUi.DataBinding.Binders {
     /// <summary>
     /// Base class for all binders, provide helpers, automatic subscription in 2 ways.
     /// </summary>

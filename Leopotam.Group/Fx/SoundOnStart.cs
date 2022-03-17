@@ -5,10 +5,10 @@
 // ----------------------------------------------------------------------------
 
 using System.Collections;
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.Fx {
+namespace Leopotam.Group.Fx {
     /// <summary>
     /// Setup FX parameters on start.
     /// </summary>

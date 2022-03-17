@@ -9,12 +9,12 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using System.Text;
-using LeopotamGroup.Common;
-using LeopotamGroup.Localization;
+using Leopotam.Group.Common;
+using Leopotam.Group.Localization;
 using UnityEngine;
 using UnityEngine.Networking;
 
-namespace LeopotamGroup.Analytics {
+namespace Leopotam.Group.Analytics {
     /// <summary>
     /// Simple GoogleAnalytics manager. Supports tracking of events, screens.
     /// </summary>

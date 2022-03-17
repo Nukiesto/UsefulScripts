@@ -5,10 +5,10 @@
 // ----------------------------------------------------------------------------
 
 using System;
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.Fx {
+namespace Leopotam.Group.Fx {
     /// <summary>
     /// Fade manager service.
     /// </summary>

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections;
-using Plugins.CoroutinesWithoutMb.Coroutines;
+using SimpleAsync.CoroutinesWithoutMb.Coroutines;
 
 namespace UsefulScripts.UnityScripts
 {

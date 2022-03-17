@@ -9,7 +9,7 @@ using System.IO;
 using System.Text.RegularExpressions;
 using UnityEngine;
 
-namespace LeopotamGroup.Serialization {
+namespace Leopotam.Group.Serialization {
     /// <summary>
     /// Csv serialization. Supports deserialization only.
     /// </summary>

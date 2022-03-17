@@ -1,9 +1,9 @@
 using System.Collections;
-using LeopotamGroup.Common;
-using LeopotamGroup.Math;
+using Leopotam.Group.Common;
+using Leopotam.Group.Math;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.MathTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Math {
     public class MathTest : MonoBehaviour {
         IEnumerator Start () {
             yield return new WaitForSeconds (1f);

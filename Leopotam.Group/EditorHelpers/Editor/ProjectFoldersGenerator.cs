@@ -10,7 +10,7 @@ using System.IO;
 using UnityEditor;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.UnityEditors {
+namespace EditorHelpers.Editor {
     /// <summary>
     /// Project folders generator.
     /// </summary>

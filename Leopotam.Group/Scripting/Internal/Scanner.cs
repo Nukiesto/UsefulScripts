@@ -9,7 +9,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace LeopotamGroup.Scripting.Internal {
+namespace Leopotam.Group.Scripting.Internal {
 class Token {
 	public int kind;    // token kind
 	public string val;  // token value

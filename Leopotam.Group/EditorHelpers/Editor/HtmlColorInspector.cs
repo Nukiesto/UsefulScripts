@@ -7,7 +7,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.UnityEditors {
+namespace EditorHelpers.Editor {
     [CustomPropertyDrawer (typeof (HtmlColorAttribute))]
     sealed class HtmlColorAttributeInspector : PropertyDrawer {
         const int HtmlLineWidth = 280;

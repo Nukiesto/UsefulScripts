@@ -7,11 +7,11 @@
 using System;
 using System.Collections.Generic;
 using System.Reflection;
-using LeopotamGroup.Collections;
-using LeopotamGroup.Common;
+using Leopotam.Group.Collections;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.SystemUi.DataBinding {
+namespace Leopotam.Group.SystemUi.DataBinding {
     /// <summary>
     /// Data binding control center, route events to IDataBinder-s.
     /// </summary>

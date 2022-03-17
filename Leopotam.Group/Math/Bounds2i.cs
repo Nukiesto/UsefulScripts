@@ -7,7 +7,7 @@
 using System;
 using UnityEngine;
 
-namespace LeopotamGroup.Math {
+namespace Leopotam.Group.Math {
     /// <summary>
     /// Axis-aligned 2d bounding box with integer coords.
     /// </summary>

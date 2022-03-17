@@ -4,7 +4,7 @@
 // Copyright (c) 2012-2019 Leopotam <leopotam@gmail.com>
 // ----------------------------------------------------------------------------
 
-namespace LeopotamGroup.SystemUi.Actions {
+namespace Leopotam.Group.SystemUi.Actions {
     /// <summary>
     /// Helpers for Ui actions.
     /// </summary>

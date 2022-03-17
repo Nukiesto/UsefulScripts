@@ -1,7 +1,7 @@
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.Common.SingletonTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Common.Singleton {
     // This singleton can be used at scene "Singleton 1 - From code".
     [MonoBehaviourServiceFilter ("Singleton 1 - From code")]
 

@@ -9,13 +9,13 @@ using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.UnityEditors {
+namespace EditorHelpers.Editor {
     /// <summary>
     /// Default inspector for all objects, add drag & drop ordering behaviour for arrays / lists.
     /// </summary>
     [CanEditMultipleObjects]
     [CustomEditor (typeof (Object), true, isFallback = true)]
-    sealed class DefaultComponentInspector : Editor {
+    sealed class DefaultComponentInspector : UnityEditor.Editor {
         static Dictionary<string, ReorderableListProperty> _reorderableLists;
 
         void OnEnable () {

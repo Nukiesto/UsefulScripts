@@ -8,12 +8,12 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-using LeopotamGroup.Serialization;
+using Leopotam.Group.Serialization;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.UnityEditors {
+namespace EditorHelpers.Editor {
     /// <summary>
     /// Unity idents generator.
     /// </summary>

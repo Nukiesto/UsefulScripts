@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace LeopotamGroup.Common {
+namespace Leopotam.Group.Common {
     /// <summary>
     /// Screen / scene manager, provides api for navigation with history rollback support.
     /// </summary>

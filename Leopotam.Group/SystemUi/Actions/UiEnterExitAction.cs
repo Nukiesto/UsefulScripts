@@ -7,7 +7,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace LeopotamGroup.SystemUi.Actions {
+namespace Leopotam.Group.SystemUi.Actions {
     /// <summary>
     /// Event data of UiEnterAction.
     /// </summary>

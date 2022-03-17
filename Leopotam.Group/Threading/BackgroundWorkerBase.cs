@@ -8,10 +8,10 @@
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.Threading {
+namespace Leopotam.Group.Threading {
     /// <summary>
     /// Base class for processing data at background thread, singleton based.
     /// Base - final inherited type.

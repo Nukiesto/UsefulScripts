@@ -7,7 +7,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace LeopotamGroup.SystemUi.Actions {
+namespace Leopotam.Group.SystemUi.Actions {
     /// <summary>
     /// Event data of UiScrollViewAction.
     /// </summary>

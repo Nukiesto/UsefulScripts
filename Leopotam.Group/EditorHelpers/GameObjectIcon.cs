@@ -9,7 +9,7 @@ using System.Diagnostics;
 using System.Reflection;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers {
+namespace EditorHelpers {
     public enum GameObjectLabelIconType {
         Gray = 0,
         Blue,

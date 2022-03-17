@@ -4,13 +4,13 @@
 // Copyright (c) 2012-2019 Leopotam <leopotam@gmail.com>
 // ----------------------------------------------------------------------------
 
-using LeopotamGroup.Localization;
-using LeopotamGroup.SystemUi.Atlases;
+using Leopotam.Group.Localization;
+using Leopotam.Group.SystemUi.Atlases;
 using UnityEngine;
 using UnityEngine.Scripting;
 using UnityEngine.UI;
 
-namespace LeopotamGroup.SystemUi.Localization {
+namespace Leopotam.Group.SystemUi.Localization {
     /// <summary>
     /// Localization helper for System UI Sprite.
     /// </summary>

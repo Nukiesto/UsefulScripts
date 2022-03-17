@@ -1,7 +1,7 @@
-using LeopotamGroup.Threading;
+using Leopotam.Group.Threading;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.ThreadingTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Threading {
     /// <summary>
     /// Custom background worker.
     /// </summary>

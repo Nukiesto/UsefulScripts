@@ -5,10 +5,10 @@
 // ----------------------------------------------------------------------------
 
 using System.Collections.Generic;
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 using UnityEngine;
 
-namespace LeopotamGroup.Scripting {
+namespace Leopotam.Group.Scripting {
     /// <summary>
     /// Script manager base class. Wrapper around ScriptVm instance, provides api from it.
     /// </summary>

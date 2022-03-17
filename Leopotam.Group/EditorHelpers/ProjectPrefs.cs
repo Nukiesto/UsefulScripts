@@ -10,11 +10,11 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
-using LeopotamGroup.Common;
-using LeopotamGroup.Serialization;
+using Leopotam.Group.Common;
+using Leopotam.Group.Serialization;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers {
+namespace EditorHelpers {
     /// <summary>
     /// EditorPrefs replacement with keeping data per project.
     /// </summary>

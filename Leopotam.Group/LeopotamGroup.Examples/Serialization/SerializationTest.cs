@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using LeopotamGroup.Common;
-using LeopotamGroup.Serialization;
+using Leopotam.Group.Common;
+using Leopotam.Group.Serialization;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.SerializationTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Serialization {
     public class SerializationTest : MonoBehaviour {
         struct StructType {
             public int ID;

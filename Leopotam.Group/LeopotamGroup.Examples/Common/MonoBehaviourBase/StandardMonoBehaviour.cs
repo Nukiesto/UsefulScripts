@@ -1,5 +1,5 @@
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.Common.MonoBehaviourTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Common.MonoBehaviourBase {
     public class StandardMonoBehaviour : MonoBehaviour { }
 }

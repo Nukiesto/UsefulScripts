@@ -8,7 +8,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace LeopotamGroup.Collections {
+namespace Leopotam.Group.Collections {
     /// <summary>
     /// List class replacement without additional checks and public access to internal array data.
     /// </summary>

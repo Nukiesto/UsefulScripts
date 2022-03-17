@@ -6,12 +6,12 @@
 
 using System;
 using System.IO;
-using LeopotamGroup.Common;
-using LeopotamGroup.Serialization;
+using Leopotam.Group.Common;
+using Leopotam.Group.Serialization;
 using UnityEditor;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.UnityEditors {
+namespace EditorHelpers.Editor {
 
     /// <summary>
     /// Buildmanager for assets bundle

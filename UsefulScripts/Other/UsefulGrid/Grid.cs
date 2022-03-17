@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using LeopotamGroup.Math;
+using Leopotam.Group.Math;
 using UnityEngine;
 
 namespace UsefulScripts.Other.UsefulGrid

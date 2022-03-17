@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace LeopotamGroup.Animation {
+namespace Leopotam.Group.Animation {
     /// <summary>
     /// Set Animator float parameter to new state on node enter.
     /// </summary>

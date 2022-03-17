@@ -1,6 +1,6 @@
 {
     "name": "Leopotam.Group",
-    "rootNamespace": "",
+    "rootNamespace": "Leopotam.Group",
     "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],

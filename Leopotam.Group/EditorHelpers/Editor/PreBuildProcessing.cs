@@ -9,7 +9,7 @@ using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers.UnityEditors {
+namespace EditorHelpers.Editor {
     /// <summary>
     /// Pre build attribute. Methods with PreBuild attribute will be executed during Compilation / Playing / Building.
     /// </summary>

@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Globalization;
 
-namespace LeopotamGroup.Common {
+namespace Leopotam.Group.Common {
     /// <summary>
     /// Custom string.Intern realization with formatting support.
     /// </summary>

@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace LeopotamGroup.Tweening {
+namespace Leopotam.Group.Tweening {
     /// <summary>
     /// Tweening rotation.
     /// </summary>

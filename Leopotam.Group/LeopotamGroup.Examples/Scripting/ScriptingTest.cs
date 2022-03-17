@@ -1,8 +1,8 @@
-using LeopotamGroup.Common;
-using LeopotamGroup.Scripting;
+using Leopotam.Group.Common;
+using Leopotam.Group.Scripting;
 using UnityEngine;
 
-namespace LeopotamGroup.Examples.ScriptingTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Scripting {
     public class ScriptingTest : MonoBehaviour {
         const string ScriptName = "Scripts/TestScript";
 

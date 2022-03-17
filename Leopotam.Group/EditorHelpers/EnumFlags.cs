@@ -6,7 +6,7 @@
 
 using UnityEngine;
 
-namespace LeopotamGroup.EditorHelpers {
+namespace EditorHelpers {
     /// <summary>
     /// Helper for custom flags selector.
     /// </summary>

@@ -4,9 +4,9 @@
 // Copyright (c) 2012-2019 Leopotam <leopotam@gmail.com>
 // ----------------------------------------------------------------------------
 
-using LeopotamGroup.Common;
+using Leopotam.Group.Common;
 
-namespace LeopotamGroup.Events {
+namespace Leopotam.Group.Events {
     /// <summary>
     /// Event bus service, local for current scene.
     /// </summary>

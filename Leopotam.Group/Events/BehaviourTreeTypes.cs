@@ -7,7 +7,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace LeopotamGroup.Events {
+namespace Leopotam.Group.Events {
     /// <summary>
     /// Behaviour tree node execution result.
     /// </summary>

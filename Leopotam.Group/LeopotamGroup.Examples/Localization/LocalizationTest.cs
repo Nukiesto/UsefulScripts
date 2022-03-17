@@ -1,8 +1,8 @@
-using LeopotamGroup.Localization;
+using Leopotam.Group.Localization;
 using UnityEngine;
 using UnityEngine.Scripting;
 
-namespace LeopotamGroup.Examples.LocalizationTest {
+namespace Leopotam.Group.LeopotamGroup.Examples.Localization {
     public class LocalizationTest : MonoBehaviour {
         const string TestKey = "common.language";
 
