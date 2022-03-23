@@ -1,5 +1,4 @@
-﻿#if LEOPOTAM_ECS
-using Leopotam.Ecs;
+﻿using Leopotam.Ecs;
 
 namespace UsefulScripts.Other
 {
@@ -47,4 +46,3 @@ namespace UsefulScripts.Other
         }
     }
 }
-#endif
