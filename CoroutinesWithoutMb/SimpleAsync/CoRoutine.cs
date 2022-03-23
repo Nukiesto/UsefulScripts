@@ -8,7 +8,7 @@ using System.Text;
 // Wrapper class for IEnumerator objects
 // This class is nice because it allows IEnumerator's to return other IEnumerator's just like Unity
 // We call it CoRoutine instead of Coroutine to differentiate it from UnityEngine.CoRoutine
-namespace SimpleAsync.CoroutinesWithoutMb.SimpleAsync
+namespace SimpleAsync
 {
     public class CoRoutine
     {
