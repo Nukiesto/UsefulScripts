@@ -30,7 +30,7 @@ namespace UsefulScripts.UnityScripts
         {
 #if UNITY_EDITOR     
             EditorUtility.SetDirty(origin);
-            AssetDatabase.SaveAssets(origin);
+            AssetDatabase.SaveAssets();
 #endif
         }
     }
