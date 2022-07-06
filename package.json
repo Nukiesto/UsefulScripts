@@ -5,7 +5,7 @@
   "description": "It`s usefuls scripts for coding",
   "dependencies": {
     "com.leopotam.ecs" : "1.0.0",
-    "jillejr.newtonsoft.json-for-unity" : "10.0.302"
+    "com.unity.nuget.newtonsoft-json" : "3.0.0"
   },
   "repository": {
     "type": "git",
