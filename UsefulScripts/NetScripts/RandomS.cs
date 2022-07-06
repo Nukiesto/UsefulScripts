@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
-using Random = Unity.Mathematics.Random;
 
 namespace UsefulScripts.NetScripts
 {
@@ -21,11 +19,6 @@ namespace UsefulScripts.NetScripts
         public static float GetRandom(this Vector2 vector2)
         {
             return UnityEngine.Random.Range(vector2.x, vector2.y);
-        }
-
-        public static float GetRandom(this Vector2 vector2, Random random)
-        {
-            return random.NextFloat(vector2.x, vector2.y);
         }
 
         public static int GetRandom(this Vector2Int vector2)

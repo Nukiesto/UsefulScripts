@@ -9,6 +9,7 @@ namespace UsefulScripts.UnityScripts.UsefulBehaviours.UI
     {
         [SerializeField] private Text text;
         [SerializeField] private float speed;
+        
         public Color startColor;
         private CoRoutine _coRoutine;
         private bool _pause;
