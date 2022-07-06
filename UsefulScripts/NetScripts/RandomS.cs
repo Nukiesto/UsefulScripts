@@ -8,12 +8,9 @@ namespace UsefulScripts.NetScripts
 {
     public static class RandomS
     {
-        public static int GetRandomId<T>(this T[] array, int inclusion)
+        public static int GetRandomId<T>(this T[] array)
         {
-            var list = array.ToList();
-            list.RemoveAt(inclusion);
-            var c = list.GetRandomId();
-            return c;
+            return UnityEngine.Random.Range(0, array.Length);
         }
 
         public static int GetRandomId<T>(this List<T> list)
@@ -94,22 +91,22 @@ namespace UsefulScripts.NetScripts
             var list = new List<object>();
             foreach (var item in vars)
                 if (RandomBoolChance(item.chance))
-                    list.Add(item.item);
-
-            return list.Count > 0 ? list[UnityEngine.Random.Range(0, list.Count)] : vars[0].item;
+                    list.Add(item.Item);
+            
+            return list.Count > 0 ? list[UnityEngine.Random.Range(0, list.Count)] : null;
         }
 
         [Serializable]
         public struct ChanceItem
         {
             //Юнит шанса, где item - объект, int - шанс в процентах
-            public object item;
+            public object Item;
             public int chance;
 
-            public ChanceItem(object item, int chance)
+            public ChanceItem(object item, int chanceSet)
             {
-                this.item = item;
-                this.chance = chance;
+                Item = item;
+                chance = chanceSet;
             }
         }
     }
