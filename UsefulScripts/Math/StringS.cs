@@ -3,7 +3,7 @@
     public class StringS
     {
         /// <summary>
-        ///     Уменьшает по регистру первую букву
+        ///     Уменьшает по регистру первую букву в массиве строк
         /// </summary>
         /// <param name="str"></param>
         /// <returns></returns>

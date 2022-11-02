@@ -7,7 +7,7 @@ namespace UsefulScripts.NetScripts.Data
 {
     public static class DataSaver
     {
-        private static JsonSerializerSettings Settings => new JsonSerializerSettings(){ReferenceLoopHandling = ReferenceLoopHandling.Ignore};
+        private static JsonSerializerSettings Settings => new() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore };
         
         private static void SaveData(string fname, string data)
         {
