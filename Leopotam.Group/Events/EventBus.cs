@@ -13,15 +13,9 @@ namespace Leopotam.Group.Events {
     /// EventBus implementation.
     /// </summary>
     public sealed class EventBus {
-        /// <summary>
-        /// Prototype for subscribers action.
-        /// </summary>
-        /// <param name="eventData">Event data.</param>
-        public delegate void EventHandler<T> (T eventData);
+        const int MaxCallDepth = 15;
 
-        const int MaxCallDepth = 5;
-
-        readonly Dictionary<Type, Delegate> _events = new Dictionary<Type, Delegate> (32);
+        readonly Dictionary<Type, Delegate> _events = new(32);
 
         int _eventsInCall;
 
@@ -29,32 +23,34 @@ namespace Leopotam.Group.Events {
         /// Subscribe callback to be raised on specific event.
         /// </summary>
         /// <param name="eventAction">Callback.</param>
-        public void Subscribe<T> (EventHandler<T> eventAction) {
-            if (eventAction != null) {
-                var eventType = typeof (T);
-                Delegate rawList;
-                _events.TryGetValue (eventType, out rawList);
-                _events[eventType] = (rawList as EventHandler<T>) + eventAction;
-            }
+        public void Subscribe<T> (Action<T> eventAction)
+        {
+            if (eventAction == null) return;
+            var eventType = typeof (T);
+            _events.TryGetValue (eventType, out var rawList);
+            _events[eventType] = (rawList as Action<T>) + eventAction;
         }
-
+        public void Subscribe<T> (Action eventAction) {
+            if (eventAction == null) return;
+            
+            Subscribe<T>((s)=>{eventAction.Invoke();});
+        }
         /// <summary>
         /// Unsubscribe callback.
         /// </summary>
         /// <param name="eventAction">Event action.</param>
         /// <param name="keepEvent">GC optimization - clear only callback list and keep event for future use.</param>
-        public void Unsubscribe<T> (EventHandler<T> eventAction, bool keepEvent = false) {
-            if (eventAction != null) {
-                var eventType = typeof (T);
-                Delegate rawList;
-                if (_events.TryGetValue (eventType, out rawList)) {
-                    var list = (rawList as EventHandler<T>) - eventAction;
-                    if (list == null && !keepEvent) {
-                        _events.Remove (eventType);
-                    } else {
-                        _events[eventType] = list;
-                    }
-                }
+        public void Unsubscribe<T> (EventHandler<T> eventAction, bool keepEvent = false)
+        {
+            if (eventAction == null) return;
+            var eventType = typeof (T);
+            if (!_events.TryGetValue(eventType, out var rawList)) return;
+            
+            var list = (rawList as EventHandler<T>) - eventAction;
+            if (list == null && !keepEvent) {
+                _events.Remove (eventType);
+            } else {
+                _events[eventType] = list;
             }
         }
 
@@ -93,10 +89,8 @@ namespace Leopotam.Group.Events {
                 return;
             }
             var eventType = typeof (T);
-            Delegate rawList;
-            _events.TryGetValue (eventType, out rawList);
-            var list = rawList as EventHandler<T>;
-            if (list != null) {
+            _events.TryGetValue (eventType, out var rawList);
+            if (rawList is Action<T> list) {
                 _eventsInCall++;
                 try {
                     list (eventMessage);
