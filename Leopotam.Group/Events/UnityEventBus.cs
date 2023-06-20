@@ -4,6 +4,7 @@
 // Copyright (c) 2012-2019 Leopotam <leopotam@gmail.com>
 // ----------------------------------------------------------------------------
 
+using System;
 using Leopotam.Group.Common;
 
 namespace Leopotam.Group.Events {
@@ -25,7 +26,7 @@ namespace Leopotam.Group.Events {
         /// Subscribe callback to be raised on specific event.
         /// </summary>
         /// <param name="eventAction">Callback.</param>
-        public void Subscribe<T> (EventBus.EventHandler<T> eventAction) {
+        public void Subscribe<T> (Action<T> eventAction) {
             _eb.Subscribe (eventAction);
         }
 
@@ -34,7 +35,7 @@ namespace Leopotam.Group.Events {
         /// </summary>
         /// <param name="eventAction">Event action.</param>
         /// <param name="keepEvent">GC optimization - clear only callback list and keep event for future use.</param>
-        public void Unsubscribe<T> (EventBus.EventHandler<T> eventAction, bool keepEvent = false) {
+        public void Unsubscribe<T> (Action<T> eventAction, bool keepEvent = false) {
             _eb.Unsubscribe (eventAction, keepEvent);
         }
 
