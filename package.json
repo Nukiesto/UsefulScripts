@@ -1,10 +1,9 @@
 {
   "name": "com.nukiesto.usefulscripts",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "displayName": "UsefulScripts",
   "description": "It`s usefuls scripts for coding",
   "dependencies": {
-    "com.leopotam.ecs" : "1.0.0",
     "com.unity.nuget.newtonsoft-json" : "3.0.0"
   },
   "repository": {
