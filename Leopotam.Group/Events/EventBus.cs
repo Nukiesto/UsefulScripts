@@ -40,13 +40,13 @@ namespace Leopotam.Group.Events {
         /// </summary>
         /// <param name="eventAction">Event action.</param>
         /// <param name="keepEvent">GC optimization - clear only callback list and keep event for future use.</param>
-        public void Unsubscribe<T> (EventHandler<T> eventAction, bool keepEvent = false)
+        public void Unsubscribe<T> (Action<T> eventAction, bool keepEvent = false)
         {
             if (eventAction == null) return;
             var eventType = typeof (T);
             if (!_events.TryGetValue(eventType, out var rawList)) return;
             
-            var list = (rawList as EventHandler<T>) - eventAction;
+            var list = (rawList as Action<T>) - eventAction;
             if (list == null && !keepEvent) {
                 _events.Remove (eventType);
             } else {
