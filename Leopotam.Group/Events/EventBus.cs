@@ -12,7 +12,8 @@ namespace Leopotam.Group.Events {
     /// <summary>
     /// EventBus implementation.
     /// </summary>
-    public sealed class EventBus {
+    public sealed class EventBus 
+    {
         const int MaxCallDepth = 15;
 
         readonly Dictionary<Type, Delegate> _events = new(32);
@@ -23,14 +24,15 @@ namespace Leopotam.Group.Events {
         /// Subscribe callback to be raised on specific event.
         /// </summary>
         /// <param name="eventAction">Callback.</param>
-        public void Subscribe<T> (Action<T> eventAction)
+        public void Subscribe<T> (Action<T> eventAction) where T : struct
         {
             if (eventAction == null) return;
             var eventType = typeof (T);
             _events.TryGetValue (eventType, out var rawList);
             _events[eventType] = (rawList as Action<T>) + eventAction;
         }
-        public void Subscribe<T> (Action eventAction) {
+        public void Subscribe<T> (Action eventAction) where T : struct
+        {
             if (eventAction == null) return;
             
             Subscribe<T>((s)=>{eventAction.Invoke();});
@@ -40,7 +42,7 @@ namespace Leopotam.Group.Events {
         /// </summary>
         /// <param name="eventAction">Event action.</param>
         /// <param name="keepEvent">GC optimization - clear only callback list and keep event for future use.</param>
-        public void Unsubscribe<T> (Action<T> eventAction, bool keepEvent = false)
+        public void Unsubscribe<T> (Action<T> eventAction, bool keepEvent = false) where T : struct
         {
             if (eventAction == null) return;
             var eventType = typeof (T);
@@ -58,7 +60,8 @@ namespace Leopotam.Group.Events {
         /// Unsubscribe all callbacks from event.
         /// </summary>
         /// <param name="keepEvent">GC optimization - clear only callback list and keep event for future use.</param>
-        public void UnsubscribeAll<T> (bool keepEvent = false) {
+        public void UnsubscribeAll<T> (bool keepEvent = false) where T : struct
+        {
             var eventType = typeof (T);
             Delegate rawList;
             if (_events.TryGetValue (eventType, out rawList)) {
@@ -81,7 +84,8 @@ namespace Leopotam.Group.Events {
         /// Publish event.
         /// </summary>
         /// <param name="eventMessage">Event message.</param>
-        public void Publish<T> (T eventMessage) {
+        public void Publish<T> (T eventMessage) where T : struct
+        {
             if (_eventsInCall >= MaxCallDepth) {
 #if UNITY_EDITOR
                 Debug.LogError ("Max call depth reached");
@@ -99,6 +103,11 @@ namespace Leopotam.Group.Events {
                 }
                 _eventsInCall--;
             }
+        }
+
+        public void Publish<T>() where T : struct
+        {
+            Publish<T>(default);
         }
     }
 }
