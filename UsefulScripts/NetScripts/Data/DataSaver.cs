@@ -1,6 +1,6 @@
 ﻿using System;
 using System.IO;
-using Unity.Plastic.Newtonsoft.Json;
+using Newtonsoft.Json;
 using UnityEngine;
 
 namespace UsefulScripts.NetScripts.Data
