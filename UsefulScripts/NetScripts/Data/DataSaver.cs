@@ -7,8 +7,22 @@ namespace UsefulScripts.NetScripts.Data
 {
     public static class DataSaver
     {
-        private static JsonSerializerSettings Settings => new() { ReferenceLoopHandling = ReferenceLoopHandling.Ignore };
-        
+        private static JsonSerializerSettings Settings
+        {
+            get
+            {
+                var settings = new JsonSerializerSettings();
+                settings.Converters.Add(new NewtonsoftColorConverter());
+                settings.Converters.Add(new NewtonsoftQuaternionConverter());
+                settings.Converters.Add(new NewtonsoftVector2Converter());
+                settings.Converters.Add(new NewtonsoftVector3Converter());
+                settings.Converters.Add(new NewtonsoftVector4Converter());
+                settings.Converters.Add(new NewtonsoftVector2IntConverter());
+                settings.Converters.Add(new NewtonsoftVector3IntConverter());
+                return settings;
+            }
+        }
+
         private static void SaveData(string fname, string data)
         {
             using (var fs = new FileStream(fname, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.ReadWrite))
