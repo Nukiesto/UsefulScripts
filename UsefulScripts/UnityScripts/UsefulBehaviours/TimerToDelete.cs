@@ -1,4 +1,5 @@
 ﻿using System.Collections;
+using Cysharp.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -46,7 +47,7 @@ namespace UsefulScripts.UnityScripts.UsefulBehaviours
 
         private void OnDisable()
         {
-            StopCoroutine(StartBlend());
+            StartBlend().Forget();
             if (spriteRenderer != null)
             {
                 var color = spriteRenderer.color;
@@ -77,12 +78,12 @@ namespace UsefulScripts.UnityScripts.UsefulBehaviours
 
         public void StartTimer()
         {
-            StartCoroutine(StartDelete());
+            StartDelete().Forget();
             if (toBlend)
-                StartCoroutine(StartBlend());
+                StartBlend().Forget();
         }
 
-        private IEnumerator StartBlend()
+        private async UniTaskVoid StartBlend()
         {
             var color = startColor;
             var value = 1f;
@@ -95,7 +96,7 @@ namespace UsefulScripts.UnityScripts.UsefulBehaviours
                 color = text.color;
             while (true)
             {
-                yield return null;
+                await UniTask.Yield();
                 var valuePlus = valuePlus0 / (1 / Time.deltaTime);
                 value -= valuePlus;
                 color.a = value;
@@ -108,15 +109,15 @@ namespace UsefulScripts.UnityScripts.UsefulBehaviours
                     textMesh.color = color;
 
                 if (value < 0)
-                    yield break;
+                    return;
             }
         }
 
-        private IEnumerator StartDelete()
+        private async UniTaskVoid StartDelete()
         {
             while (true)
             {
-                yield return new WaitForSeconds(time);
+                await UniTask.WaitForSeconds(time);
 
                 OnTimeOutEvent?.Invoke();
                 if (mode == Mode.Disable)
@@ -124,7 +125,7 @@ namespace UsefulScripts.UnityScripts.UsefulBehaviours
                 else
                     Destroy(gameObject);
 
-                yield break;
+                return;
             }
         }
     }

@@ -1,10 +1,11 @@
 {
   "name": "com.nukiesto.usefulscripts",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "displayName": "UsefulScripts",
   "description": "It`s usefuls scripts for coding",
   "dependencies": {
-    "com.unity.nuget.newtonsoft-json" : "3.0.0"
+    "com.unity.nuget.newtonsoft-json" : "3.0.0",
+    "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask"
   },
   "repository": {
     "type": "git",
